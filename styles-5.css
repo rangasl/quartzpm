@@ -1,0 +1,753 @@
+/* Mobile View */
+@media (max-width: 1024px) {
+
+    .navbar>.container-fluid {
+        justify-content: flex-end !important;
+    }
+
+
+    .nav-link {
+        text-decoration: none;
+        text-align: left;
+        font: normal normal bold 12px/18px Poppins !important;;
+        letter-spacing: 0px;
+        color: #835927 !important;
+        opacity: 1;
+    }
+
+    .button-container {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .image-container {
+        margin-right: 1rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .menu-list {
+        margin-left: 1rem;
+    }
+
+    .carousel {
+        margin-top: 10%;
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background: url("./images/contact-us-bg.png") 0% 0% padding-box;
+        background-size: cover;
+    }
+
+    .carousel:after {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .p1 {
+        padding: 50px 12px 50px 12px;
+        /* border-right: 1px solid; */
+        text-align: center;
+        font: normal normal medium 16px/30px Poppins;
+        letter-spacing: 0px;
+        color: #575757;
+        opacity: 1;
+    }
+
+    .p2 {
+        padding: 50px 12px 50px 12px;
+        text-align: center;
+        font: normal normal medium 16px/30px Poppins;
+        letter-spacing: 0px;
+        color: #575757;
+        opacity: 1;
+    }
+
+    .intro {
+        position: relative;
+        width: 100%;
+        height: 602px;
+        background: transparent url("./images/stone-floor-texture.png") 0% 0% padding-box;
+        mix-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    .container-why {
+        /* height: 700px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .why-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    ul#why {
+        display: inline-block;
+        margin: 0px;
+        list-style-type: none;
+        justify-content: center;
+        padding: 0;
+    }
+
+    ul#why1 {
+        padding: 100px;
+        display: block;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    ul#why1 li {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .why-title {
+        font: normal normal 600 25px/64px Poppins;
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .products {
+        display: none;
+    }
+
+    .process {
+        /* height: 600px; */
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    #process-image-1 {
+        display: none
+    }
+
+    #process-image-2 {
+        display: none
+    }
+
+    .process-title {
+        text-align: center;
+        /* font: normal normal 600 50px/64px Poppins; */
+        font-weight: bold;
+        font-size: 30px;
+        font-family: Poppins;
+
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+        margin-bottom: 30px;
+    }
+
+    .process-tag-line {
+        width: 210px;
+        text-align: center;
+        font: normal normal medium 15px/25px Poppins;
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+        margin-bottom: 30px;
+    }
+
+    /* .process-col-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .process-col-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+
+    .process-col-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+
+    .process-cont {
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .btn {
+        width: 150px;
+        height: 47px;
+        border: 2px solid #C59A67 !important;
+        border-radius: 36px !important;
+        opacity: 1;
+    }
+    
+    .btn:hover {
+        width: 150px;
+        height: 47px;
+        background-color: #C59A67;
+        border: 2px solid #C59A67 !important;
+        border-radius: 36px !important;
+        opacity: 1;
+    }
+
+
+    .footer {
+        /* display: flex; */
+        min-height: 400px;
+        background-color: #272B3E;
+
+    }
+
+    .footer-title {
+        text-align: center;
+        font: normal normal 600 25px/33px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin-bottom: 15px;
+    }
+
+    .footer-tag-line {
+        text-align: center;
+        font: normal normal normal 12px/20px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF !important;
+        opacity: 1;
+        margin-bottom: 15px;
+    }
+
+    .btn-footer {
+        width: 150px;
+        height: 47px;
+        border: 2px solid #C59A67 !important;
+        color: #FFFFFF;
+        border-radius: 36px !important;
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    .btn-footer:hover {
+        width: 150px;
+        height: 47px;
+        color: #FFFFFF;
+        background-color: #C59A67;
+        border: 2px solid #C59A67 !important;
+        border-radius: 36px !important;
+        opacity: 1;
+    }
+    .footer-sub-title-2 {
+        text-align: center;
+        font: normal normal 600 18px/20px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    .footer-tag-line-2 {
+        text-align: center;
+        font: normal normal 300 12px/20px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    .footer-mobile {
+        text-align: center;
+        font: normal normal 300 12px/20px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+
+    #f-1 {
+        display: none;
+        text-align: center;
+        padding-top: 20px;
+        padding: 0 10vw 0 10vw;
+
+    }
+
+    #f-2 {
+        text-align: center;
+        padding: 20px 10vw 0 10vw;
+    }
+
+    #f-3 {
+        text-align: center;
+        padding: 30px 10vw 0 10vw;
+    }
+
+    #f-4 {
+        text-align: center;
+        padding: 30px 10vw 0 10vw;
+    }
+
+}
+
+
+
+/*################# PC View #################*/
+@media (min-width: 1024px) {
+    .navbar {
+        height: 5rem;
+        font: normal normal bold 12px/18px Poppins !important;
+        ;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        text-align: left;
+        font: normal normal bold 12px/18px Poppins;
+        letter-spacing: 0px;
+        color:#835927 !important;
+        opacity: 1;
+    }
+
+    .active {
+        text-decoration: none;
+        text-align: left;
+        font: normal normal bold 12px/18px Poppins;
+        letter-spacing: 0px;
+        color:#DB9849 !important;
+        opacity: 1;
+    }
+
+    .menu-container {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 111px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        padding-left: 97px !important;
+    }
+
+    .menu-list {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 97px !important;
+    }
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: 540px;
+        background: url("./images/contact-us.png");
+        background-size: cover;
+    }
+
+    .carousel:after {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(56, 10, 1, 0.4);
+    }
+
+
+
+    .title {
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        width: 567px;
+        height: 162px;
+
+        text-align: left;
+        font: normal normal bold 57px/82px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .p1 {
+        width: 30%;
+        padding: 80px 15px 50px 12px;
+        /* border-right: 1px solid; */
+        text-align: left;
+        font-family: Poppins !important;
+        font-size: normal normal medium 16px/30px;
+        letter-spacing: 1px;
+        color: #575757;
+        opacity: 1;
+
+    }
+
+    .p2 {
+        width: 30%;
+        padding: 80px 12px 50px 20px;
+        text-align: left;
+        font-family: Poppins !important;
+        font-size: normal normal medium 16px/30px;
+        letter-spacing: 1px;
+        color: #575757;
+        opacity: 1;
+
+    }
+
+    .intro {
+        position: relative;
+        width: 100%;
+        height: 602px;
+        background: transparent url("./images/stone-floor-texture.png") 0% 0% padding-box;
+        mix-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    .intro-paragraph {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-why {
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #why {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        padding: 0;
+        margin-bottom: 75px;
+    }
+
+    ul#why1 {
+        display: block;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0;
+
+    }
+
+    ul#why1 li {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .why-title {
+        font: normal normal 600 45px/64px Poppins;
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+
+
+
+    .vl {
+        margin-top: 80px;
+        border-left: 3px solid #7c613f;
+        height: 300px;
+    }   
+    .btn-footer {
+        width: 150px;
+        height: 47px;
+        border: 2px solid #C59A67 !important;
+        color: #FFFFFF;
+        border-radius: 36px !important;
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    .btn-footer:hover {
+        width: 150px;
+        height: 47px;
+        color: #FFFFFF;
+        background-color: #C59A67;
+        border: 2px solid #C59A67 !important;
+        border-radius: 36px !important;
+        opacity: 1;
+    }
+
+    .container-gallery {
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .products {
+        height: 900px;
+        background: transparent url("./images/stone-floor-texture-2.png") 0% 0% padding-box;
+        mix-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .products-title {
+        text-align: left;
+        font: normal normal 600 45px/64px Poppins;
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+    }
+
+    .product-tag-line {
+        text-align: center;
+        font: normal normal medium 15px/25px Poppins;
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+    }
+
+    .btn-submit {
+        width: 100%;
+        height: 47px;
+        background: rgba(39, 43, 62, 1) !important;
+        border: rgba(39, 43, 62, 1) !important;
+        border-radius: 0 !important;
+        color: white !important;
+        opacity: 1;
+    }
+
+
+    .btn {
+        width: 150px;
+        height: 47px;
+        border: 2px solid #C59A67 !important;
+        border-radius: 36px !important;
+        opacity: 1;
+    }
+
+    .gallery-titles li {
+        /* margin-bottom: 50px; */
+        list-style-type: none;
+    }
+
+    .gallery-titles li a {
+        text-decoration: none;
+        text-align: left;
+        font: normal normal bold 15px/31px Poppins;
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+    }
+
+    .gallery-images {
+        min-width: 800px;
+    }
+
+    .gallery-images li {
+        display: inline;
+
+    }
+
+    .gallery-images li img {
+        height: 220px !important;
+    }
+
+    .process {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .process-title {
+        text-align: left;
+        font: normal normal 600 50px/64px Poppins;
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+        margin-bottom: 30px;
+    }
+
+    .process-tag-line {
+        width: 210px;
+        text-align: left;
+        font: normal normal medium 15px/25px Poppins;
+        letter-spacing: 0px;
+        color: #272B3E;
+        opacity: 1;
+        margin-bottom: 30px;
+    }
+
+    .process-col-1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 20vw;
+    }
+
+    .process-col-2 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 22vw;
+    }
+
+    /* .container-footer {
+        display: flex;
+
+    } */
+
+    .footer {
+        display: flex;
+        min-height: 400px;
+        background-color: #272B3E;
+        padding: 0 30px 0 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-title {
+        text-align: left;
+        font: normal normal 600 25px/33px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin-bottom: 15px;
+    }
+
+    .footer-tag-line {
+        text-align: left;
+        font: normal normal normal 12px/20px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF !important;
+        opacity: 1;
+        margin-bottom: 15px;
+    }
+
+    .btn-footer {
+        width: 150px;
+        height: 47px;
+        color: #FFFFFF !important;
+        background: transparent url('img/Group 3639.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+
+    .footer-sub-title-2 {
+        text-align: left;
+        font: normal normal 600 18px/20px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    .footer-tag-line-2 {
+        text-align: left;
+        font: normal normal 300 12px/20px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    .footer-mobile {
+        text-align: left;
+        font: normal normal 300 12px/20px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+
+
+    .btn-footer {
+        width: 150px;
+        height: 47px;
+        color: #FFFFFF !important;
+        background: transparent url('img/Group 3639.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+
+    .f-1 {
+        text-align: left;
+        margin-left: 60px;
+        padding-left: 100px;
+        padding-top: 120px !important;
+        height: 400px !important;
+    }
+
+
+    .f-2 {
+        text-align: left;
+        padding-top: 120px !important;
+        height: 400px !important;
+    }
+
+    .f-3 {
+        text-align: left;
+        padding-top: 120px !important;
+        height: 400px !important;
+    }
+
+    .f-4 {
+        text-align: left;
+        padding-top: 120px !important;
+        height: 400px !important;
+    }
+
+    .main-container {
+        position: relative;
+    }
+
+    .card-1 {
+        position: absolute;
+        top: 60vh;
+        right: 10vw;
+
+        width: 500px;
+        border-radius: 20px;
+        padding: 50px 20px 40px 20px;
+        margin: 20px 10px 20px 10px;
+        box-shadow: 10px 10px 26px #00000029;
+        background: white;
+    }
+
+    .input-fields {
+        margin-bottom: 30px;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+}

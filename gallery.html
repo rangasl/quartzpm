@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Quarts</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles-5.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <script src="/app.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
+
+
+
+<style>
+.popup-image{
+  position:fixed;
+  top:0;
+  left:0;
+  background:black;
+  height:100%;
+  width:100%;
+  z-index:100;
+  display:none;
+}
+.popup-image span{
+  position:absolute;
+  top:0;
+  right:10px;
+  font-size:60px;
+  font-weigth:bolder;
+  color:white;
+  cursor:pointer;
+  z-index:100;
+}
+.popup-image img{
+  position:absolute;
+  top:300px;
+  left:50%;
+  transform:translate(-50%, -50%);
+  border-radius: 5px;
+  width: 750px;
+  object-fit:cover;
+}
+.row .col-3 img{
+  <!--box-shadow:0 5px 15px black; -->
+  overflow:hidden;
+  cursor:pointer;
+  object-fit:cover;
+  transition:.2s linear;
+  border: 2px solid white;
+}
+.row .col-3 img:hover{
+  transform:scale(1.5);
+}
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="image-container">
+        <a class="navbar-brand" href="./index.html"><img src="./images/title.png" /></a>
+      </div>
+      <div class="button-container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="menu-list">
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./whypm.html">WHY PM?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-us.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="row" style="padding:2%"> 
+    <h1 style="padding-bottom:5%;text-align: center;font: normal normal 600 45px/64px Poppins; letter-spacing: 0px;color: #000000;opacity: 1;">
+        Our Gallery</h1>  
+  <div class="col-3">
+    <p><img class="image" src="./images/Galary/PMQTZ-01.jpg" style="width:100%"></p>
+    <p><img class="image"src="./images/Galary/PMQTZ-03.jpg" style="width:100%"></p>
+    <p><img class="image" src="./images/Galary/PMQTZ-05.jpg" style="width:100%"></p>
+    <p><img class="image" src="./images/Galary/PMQTZ-06.jpg" style="width:100%"></p>
+
+  </div>
+  <div class="col-3">
+    <p><img class="image" src="./images/Galary/PMQTZ-07.jpg" style="width:100%"></p>
+     <p><img class="image" src="./images/Galary/PMQTZ-026.jpg" style="width:100%"></p>
+    <p><img class="image" src="./images/Galary/PMQTZ-09.jpg" style="width:100%"></p>
+    <p><img class="image" src="./images/Galary/PMQTZ-022.jpg" style="width:100%"></p>
+  </div>  
+  <div class="col-3">
+    
+    
+    <p><img class="image" src="./images/Galary/PMQTZ-011.jpg" style="width:100%"></p>
+     <p><img class="image" src="./images/Galary/PMQTZ-012.jpg" style="width:100%"></p>
+     <p><img class="image" src="./images/Galary/PMQTZ-014.jpg" style="width:100%"></p>
+    <p><img class="image" src="./images/Galary/PMQTZ-015.jpg" style="width:100%"></p>
+    <p><img class="image" src="./images/Galary/PMQTZ-024.jpg" style="width:100%"></p>
+  </div>
+  <div class="col-3">
+   <p><img class="image"src="./images/Galary/PMQTZ-016.jpg" style="width:100%"></p>
+     <p><img class="image" src="./images/Galary/PMQTZ-017.jpg" style="width:100%"></p>
+     <p><img class="image" src="./images/Galary/PMQTZ-018.jpg" style="width:100%"></p>
+    <p><img class="image" src="./images/Galary/PMQTZ-019.jpg" style="width:100%"></p>
+    <p><img class="image" src="./images/Galary/PMQTZ-08.jpg" style="width:100%"></p>
+    
+  </div>
+</div>
+
+<div class="popup-image">
+<span>&times;</span>
+<img class="image" src="./images/Galary/PMQTZ-014.jpg" style="width:50%">
+
+
+</div>
+<div style="padding: 4%;"></div>
+  
+
+
+
+  <!-- <div id="map"></div> -->
+
+    
+
+  <!-- <div id="map"></div> -->
+  <div class="container-footer">
+    <div class="footer">
+      <div class="row " >
+        <div id="f-1" class="col-sm f-1">
+          <div>
+
+            <div class="footer-title">Order a sample</div>
+            <p class="footer-tag-line">
+              Learn more about how else we can help you with quartz makes
+              it top-notch.
+            </p>
+             <button class="btn-footer" onclick="location.href='./contact-us.html'" >Order Now</button>
+
+          </div>
+        </div>
+
+        <div id="f-2" class="col-sm f-2">
+          <div>
+
+            <div class="footer-sub-title-2">FACTORY</div>
+            <p class="footer-tag-line-2">
+              NH 7, Bengaluru-Krishnagiri Highway Near TNEB Power Grid,
+              Shoolagiri Post Hosur TK, Krishnagiri District Tamil Nadu,
+              India 635 117
+            </p>
+            <div class="footer-mobile">+91 43442 52555</div>
+
+          </div>
+        </div>
+
+        <div id="f-3" class="col-sm f-3">
+          <div>
+
+            <div class="footer-sub-title-2">HEAD OFFICE</div>
+            <p class="footer-tag-line-2">
+              129, 7th Main 5th Block, Jayanagar Bangalore, India 560 041
+            </p>
+            <div class="footer-mobile">+91 80 2653 4959</div>
+
+          </div>
+        </div>
+
+
+        <div id="f-4" class="col-sm f-4">
+          <div>
+
+            <div class="footer-tag-line-2">quartz@pmgroup.org.in</div>
+            <div class="footer-tag-line-2">Follow us on</div>
+            <div>
+              <img src="./images/1.svg" style="margin-right: 15px" />
+              <img src="./images/2.svg" style="margin-right: 15px" />
+              <img src="./images/3.svg" />
+            </div>
+
+          </div>
+        </div>
+
+        <div id="f-4" class="col-sm f-4">
+          <div>
+
+            <div>
+              <img src="./images/logo-footer.png" style="width: 180px" />
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.querySelecterAll('.row img').forEach(image =>{
+    image.onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'block';
+      document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+  });
+
+ document.querySelectorAll('.popup-image span').onclick = () =>{
+  document.querySelector('.popup-image').style.display = 'none';
+ }
+
+
+
+  </script>
+</body>
+
+</html>

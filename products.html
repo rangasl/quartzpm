@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Quarts</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles-5.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <script src="/app.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
+  <style>
+
+* {
+   box-sizing: border-box;
+}
+h1 {
+   text-align: center;
+}
+.outer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+}
+.inner-grid {
+   flex: 25%;
+   padding: 0 4px;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 90%;
+   
+}
+.productLinl{
+  text-decoration:none;
+}
+
+
+.productLinl img:hover{
+  box-shadow: 10px 10px 18px #00000039;
+  
+ 
+}
+.imghover:hover {
+  box-shadow: 10px 10px 18px #00000039;
+  transform: scale(1:1);
+}
+
+
+@media screen and (max-width: 800px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 100%;
+      max-width: 100%;
+   }
+}
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="image-container">
+        <a class="navbar-brand" href="./index.html"><img src="./images/title.png" /></a>
+      </div>
+      <div class="button-container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="menu-list">
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./whypm.html">WHY PM?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-us.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <div class="row">
+    <div class="col-12 col-sm-12" style="padding-right: 0px; padding-left: 0px;  background: linear-gradient(rgb(37, 37, 37,0.3),rgba(49, 49, 49, 0.3),rgba(255, 255, 255, 0.3)), url('./images/products.png') no-repeat top center;background-size: cover;
+    ">
+    
+    <h1 style="text-align: left; margin-top:15%;margin-left:10%;margin-bottom:20%;font: normal normal 600 45px/73px Poppins; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+      Explore all the Products <br>
+    </h1>
+         
+    </div>
+
+    <div class="col-12 col-sm-12" style="padding-right: 0px; padding-left: 0px;
+    ">
+     <h1 style="text-align: center; margin-top:6%;margin-bottom:5%;font: normal normal 600 50px/73px Poppins; letter-spacing: 0px;color: #000000;opacity: 1;">
+    Calacatta Range
+    </h1>
+    <h1 style="text-align: center; margin-top:4%;margin-bottom:5%;font: normal normal 16px/27px Poppins; letter-spacing: 0px;color: #000000;opacity: 1;">
+      Adding a bit of jazz to everything it adorns, our Calacatta range brings you the finest quartz<br>to your home. Envisioned to add elegance and grandeur to a home, our premium range of<br>
+      quarts is streacked with dramatic lines to give is a staliar effect. Found in colours of black, white<br>and cream, streaked with bold lines of black, white, beige or gold. The artfully placed long<br>
+      linear lines bring in flair across the plain quartz.
+         
+    </div>
+    
+    <div class="col-12 col-sm-12" style="padding-left: 20%;padding-right: 20%; padding-bottom:10%;align-items: center;">
+      <div class="outer-grid" style="text-align:center;">
+
+      <div class="inner-grid">
+
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+       <a class="productLinl" href="calcatta-artic.html"> <img  src="./images/CALACATTA ARTIC.png" ></a>
+
+          <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+          font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Artic</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-capri.html"><img  src="./images/CALACATTACAPRI.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+          font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Capri</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-mirage.html"><img  src="./images/CALACATTAMIRAGE.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Mirage</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-rome.html"><img  src="./images/CALACATTAROME.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Rome</figcaption>
+        </figure>
+      </div>
+      <div class="inner-grid">
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-Bettogli.html"><img  src="./images/CALACATTABETTOGLI.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Bettogli</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-manhattan.html"><img  src="./images/CALACATTAMANHATTAN.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Manhatton</figcaption>
+        </figure>
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-naile.html"><img  src="./images/CALACATTANILE.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Nile</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="clacatta-splendor-gold.html"><img  src="./images/SPLENDOR GOLD.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Splender Gold</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-tuscony.html"><img  src="./images/CALACATTATUSCANY.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Tuscany</figcaption>
+        </figure>
+      </div>
+      <div class="inner-grid">
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calakatta-bianco-bella-extra.html"><img  src="./images/CALACATTABIANCOBELLAEXTRA.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Biancobella Extra</figcaption>
+        </figure>
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-marfil.html"><img  src="./images/CALACATTAMARFIL.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Marfil</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-rivera.html"><img  src="./images/CALACATTARIVERA.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Rivera</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <a class="productLinl" href="calacatta-splender.html"><img  src="./images/CALACATTASPLENDOR.png" ></a>
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Calacatta Splendor</figcaption>
+        </figure>
+
+      </div>
+
+      </div>
+    </div>
+  
+
+    <div class="col-12 col-sm-12" style="padding-right: 0px; padding-left: 0px;
+    ">
+     <h1 style="text-align: center; margin-top:6%;margin-bottom:5%;font: normal normal 600 50px/73px Poppins; letter-spacing: 0px;color: #000000;opacity: 1;">
+    Standard Range
+    </h1>
+    <h1 style="text-align: center; margin-top:4%;margin-bottom:5%;font: normal normal 16px/27px Poppins; letter-spacing: 0px;color: #000000;opacity: 1;">
+      Sturdy, durable and easy-to-maintain - the standard range of quartz is of superior<br>quality. The composisiton of the quartz available is 99%-and adds elegance to your<br>
+      homes. Pushing the boundaries of workmanship and design, the quartz is available<br>in many different shades. Used as a kitchen countertops to bathroom counters,<br>
+      laundry rooms and much more.
+    </h1>
+         
+    </div>
+    
+    <div class="col-12 col-sm-12" style="padding-left: 20%;padding-right: 20%; padding-bottom:10%;align-items: center;">
+      <div class="outer-grid" style="text-align:center;">
+
+      <div class="inner-grid">
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover"  src="./images/ARBESCATO.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Abescato</figcaption>
+        </figure>
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover"  src="./images/CARRARA GOLD.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Carrara Gold</figcaption>
+        </figure>
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/CARRARA NEW.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Carrara New</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover"  src="./images/PMQTZ-0018.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">PMQTZ-0018</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/PURE WHITE.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Pure White</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/ST.DIOR.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">St.Dior</figcaption>
+        </figure>
+      </div>
+      <div class="inner-grid">
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/CAMDEN GREY.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Camden Grey</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/CARRA RA LIGHT.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Carrara Light</figcaption>
+        </figure>
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover"  src="./images/CARRARA NOIR.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Carrara Noir</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/PMQTZ-0023.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">PMQTZ - 0023</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover"  src="./images/ST.ANGELO.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">St.Angelo</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/ST.REGIS.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">St.Regis</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/WHITE SPARKLE.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">White Sparkle</figcaption>
+        </figure>
+      </div>
+      <div class="inner-grid">
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/CARRARA BROWN.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Carrara Brown</figcaption>
+        </figure>
+
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/CARRARA MOCHA.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Carrara Mocha</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/OASIS.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">Oasis</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/PMQTZ-0030.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">PMQTZ-0030</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover"  src="./images/ST.CHIANTI.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">St.Chianti</figcaption>
+        </figure>
+        <figure style="border: 1px solid #70707041;
+        border-radius: 17px;
+        opacity: 1;padding: 5%;">
+        <img class="imghover" src="./images/ST.TIANO.png" >
+
+        <figcaption style="text-align: left;padding-left: 5%;padding-top: 10%;
+        font: normal normal 600 13px/16px Poppins;
+          letter-spacing: 0px;
+          color: #272B3E;
+          opacity: 1;">St.Tiano</figcaption>
+        </figure>
+
+      </div>
+      
+      </div>
+    </div>
+  
+    
+    
+  </div>
+
+  <!-- <div id="map"></div> -->
+
+
+
+  <div class="container-footer">
+    <div class="footer">
+      <div class="row " >
+        <div id="f-1" class="col-sm f-1">
+          <div>
+
+            <div class="footer-title">Order a sample</div>
+            <p class="footer-tag-line">
+              Learn more about how else we can help you with quartz makes
+              it top-notch.
+            </p>
+             <button class="btn-footer" onclick="location.href='./contact-us.html'" >Order Now</button>
+
+          </div>
+        </div>
+
+        <div id="f-2" class="col-sm f-2">
+          <div>
+
+            <div class="footer-sub-title-2">FACTORY</div>
+            <p class="footer-tag-line-2">
+              NH 7, Bengaluru-Krishnagiri Highway Near TNEB Power Grid,
+              Shoolagiri Post Hosur TK, Krishnagiri District Tamil Nadu,
+              India 635 117
+            </p>
+            <div class="footer-mobile">+91 43442 52555</div>
+
+          </div>
+        </div>
+
+        <div id="f-3" class="col-sm f-3">
+          <div>
+
+            <div class="footer-sub-title-2">HEAD OFFICE</div>
+            <p class="footer-tag-line-2">
+              129, 7th Main 5th Block, Jayanagar Bangalore, India 560 041
+            </p>
+            <div class="footer-mobile">+91 80 2653 4959</div>
+
+          </div>
+        </div>
+
+
+        <div id="f-4" class="col-sm f-4">
+          <div>
+
+            <div class="footer-tag-line-2">quartz@pmgroup.org.in</div>
+            <div class="footer-tag-line-2">Follow us on</div>
+            <div>
+              <img src="./images/1.svg" style="margin-right: 15px" />
+              <img src="./images/2.svg" style="margin-right: 15px" />
+              <img src="./images/3.svg" />
+            </div>
+
+          </div>
+        </div>
+
+        <div id="f-4" class="col-sm f-4">
+          <div>
+
+            <div>
+              <img src="./images/logo-footer.png" style="width: 180px" />
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="" async defer></script>
+</body>
+
+</html>
